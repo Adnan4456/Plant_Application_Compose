@@ -18,7 +18,11 @@ jobs:
 
       - name : Run ktlint Check
         run : ./gradlew ktlintCheck
-        shell: bash
+
+      - name: Print Debug Information
+        run: |
+          pwd
+          ls -la
 
       - name :  Run ktlint Format
         run : ./gradlew ktlintformat
