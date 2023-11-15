@@ -18,6 +18,7 @@ jobs:
 
       - name : Run ktlint Check
         run : ./gradlew ktlintCheck
+        shell: bash
 
       - name :  Run ktlint Format
         run : ./gradlew ktlintformat
